@@ -16,7 +16,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@anon-aadhaar/circuits@workspace:packages/circuits"
   dependencies:
-    "@anon-aadhaar/core": "workspace:*"
+    "@anon-aadhaar/core": "npm:^2.4.3"
     "@aws-sdk/client-s3": "npm:^3.509.0"
     "@aws-sdk/lib-storage": "npm:^3.509.0"
     "@types/circomlibjs": "npm:^0.1.6"
@@ -62,7 +62,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@anon-aadhaar/core@workspace:*, @anon-aadhaar/core@workspace:packages/core":
+"@anon-aadhaar/core@npm:^2.4.3, @anon-aadhaar/core@workspace:*, @anon-aadhaar/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@anon-aadhaar/core@workspace:packages/core"
   dependencies:
