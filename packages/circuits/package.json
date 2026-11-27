@@ -23,13 +23,13 @@
     "bump-to": "yarn version -i "
   },
   "dependencies": {
-    "@anon-aadhaar/core": "^2.4.3",
-    "@zk-email/circuits": "^6.1.1"
+    "@anon-aadhaar/core": "^2.4.3"
   },
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.509.0",
     "@aws-sdk/lib-storage": "^3.509.0",
     "@types/circomlibjs": "^0.1.6",
+    "@zk-email/circuits": "^6.1.1",
     "@zk-email/helpers": "^6.1.1",
     "assert": "^2.1.0",
     "circom_tester": "^0.0.20",
@@ -39,6 +39,9 @@
     "mocha": "^10.2.0",
     "prettier": "^3.1.1",
     "snarkjs": "^0.7.4"
+  },
+  "peerDependencies": {
+    "@zk-email/circuits": "^6.1.1"
   },
   "resolutions": {
     "snarkjs": "^0.7.4"
