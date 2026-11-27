@@ -3,7 +3,7 @@
 
 # default dir
 BUILD_DIR="$(pwd)/build"
-PTAU="powersOfTau28_hez_final_21.ptau"
+PTAU="ppot_0080_21.ptau"
 PTAU_PATH="$BUILD_DIR/$PTAU"
 CONTRACTS_DIR="$(pwd)/../contracts/src"
 JS_BUILD_DIR="$BUILD_DIR/aadhaar-verifier_js"
@@ -36,7 +36,7 @@ function install_deps() {
     echo "Download power of tau...."
     cd "$BUILD_DIR"
     if [ ! -f "$PTAU_PATH" ]; then
-        wget https://hermez.s3-eu-west-1.amazonaws.com/$PTAU
+        wget https://pse-trusted-setup-ppot.s3.eu-central-1.amazonaws.com/pot28_0080/$PTAU
         echo "Finished download!"
     else 
         echo "Powers of tau file already downloaded... Skip download action!"
